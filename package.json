@@ -1,0 +1,44 @@
+{
+  "scripts": {
+    "start": "snowpack dev",
+    "buildTest": "cross-env NODE_ENV=buildTest snowpack build",
+    "build": "snowpack build",
+    "prettier": "node ./scripts/prettier.js",
+    "lint-staged": "lint-staged",
+    "pretty-quick": "pretty-quick --staged --ignore-path=.prettierignore"
+  },
+  "dependencies": {
+    "vue": "3.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn pretty-quick"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,ts,tsx,json,jsx,less,vue}": [
+      "yarn prettier",
+      "git add ."
+    ]
+  },
+  "devDependencies": {
+    "@csstools/postcss-sass": "^4.0.0",
+    "@snowpack/plugin-build-script": "^2.1.0",
+    "@snowpack/plugin-dotenv": "^2.1.0",
+    "@snowpack/plugin-sass": "^1.4.0",
+    "@snowpack/plugin-vue": "^2.5.0",
+    "@snowpack/plugin-webpack": "^2.3.1",
+    "autoprefixer": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.16.0",
+    "http2-proxy": "^5.0.53",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "postcss-cli": "^8.3.1",
+    "postcss-scss": "^3.0.4",
+    "prettier": "^2.3.0",
+    "pretty-quick": "^3.1.0",
+    "sass": "^1.30.0",
+    "snowpack": "^3.4.0"
+  }
+}
