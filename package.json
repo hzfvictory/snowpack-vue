@@ -8,7 +8,7 @@
     "pretty-quick": "pretty-quick --staged --ignore-path=.prettierignore"
   },
   "dependencies": {
-    "vue": "3.0.0"
+    "vue": "2.6.12"
   },
   "husky": {
     "hooks": {
@@ -39,6 +39,7 @@
     "prettier": "^2.3.0",
     "pretty-quick": "^3.1.0",
     "sass": "^1.30.0",
-    "snowpack": "^3.4.0"
+    "snowpack": "^3.4.0",
+    "snowpack-vue2-plugin": "^0.0.5"
   }
 }

@@ -1,9 +1,9 @@
 <template>
-  <div class="App">
+  <div class="App" id="app">
     <header class="App-header">
-      <img src="./assets/images/logo.svg" class="App-logo" alt="logo" />
+      <!--      <img src="./assets/images/logo.svg" class="App-logo" alt="logo"/>-->
       <p>
-        Edit
+        1212 121 12 121212 Edit1 1212121 11
         <code>src/App.vue</code> and save to reload. /{{ type }}/{{ ts }}/{{ yy }}/{{ sss }}
       </p>
       <a class="App-link" href="https://vuejs.org" target="_blank" rel="noopener noreferrer">{{
@@ -26,9 +26,6 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-@import "assets/css/common";
-</style>
 <style lang="scss" scoped>
 .App {
   text-align: center;
