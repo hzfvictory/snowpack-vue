@@ -29,6 +29,7 @@
     "@snowpack/plugin-vue": "^2.5.0",
     "@snowpack/plugin-webpack": "^2.3.1",
     "autoprefixer": "^10.1.0",
+    "compression-webpack-plugin": "^5.0.2",
     "cross-env": "^7.0.3",
     "eslint": "^7.16.0",
     "http2-proxy": "^5.0.53",
@@ -38,6 +39,7 @@
     "postcss-scss": "^3.0.4",
     "prettier": "^2.3.0",
     "pretty-quick": "^3.1.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
     "sass": "^1.30.0",
     "snowpack": "^3.4.0",
     "snowpack-vue2-plugin": "^0.0.5"
