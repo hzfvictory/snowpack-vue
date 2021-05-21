@@ -4,10 +4,13 @@ const ProgressBarPlugin = require("progress-bar-webpack-plugin");
 module.exports = {
   mode: "development",
   mount: {
-    public: "/",
-    src: "/_build_",
+    // "./src/": { url: "/src/", static: true },
+    // "./node_modules/element-ui/": { url: "/_snowpack/pkg/element-ui/", static: false },
+    public: { url: "/", static: false, resolve: true },
+    src: { url: "/src" },
   },
   plugins: [
+    "@snowpack/plugin-babel", // 编译jsx
     [
       "@snowpack/plugin-webpack",
       {
@@ -37,6 +40,7 @@ module.exports = {
   devOptions: {
     port: 9988,
   },
+  routes: [{ match: "routes", src: ".*", dest: "/index.html" }],
   env: {
     ...process.env,
     API_URL: "api.google.com",

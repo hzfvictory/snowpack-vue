@@ -8,7 +8,14 @@
     "pretty-quick": "pretty-quick --staged --ignore-path=.prettierignore"
   },
   "dependencies": {
-    "vue": "2.6.12"
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.4",
+    "element-ui": "^2.15.1",
+    "lodash": "^4.17.21",
+    "vue": "2.6.12",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2",
+    "zy-ele-design": "^0.6.283"
   },
   "husky": {
     "hooks": {
@@ -23,6 +30,7 @@
   },
   "devDependencies": {
     "@csstools/postcss-sass": "^4.0.0",
+    "@snowpack/plugin-babel": "^2.1.7",
     "@snowpack/plugin-build-script": "^2.1.0",
     "@snowpack/plugin-dotenv": "^2.1.0",
     "@snowpack/plugin-sass": "^1.4.0",
